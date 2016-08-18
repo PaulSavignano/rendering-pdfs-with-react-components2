@@ -2,6 +2,11 @@ import React from 'react'
 import InLineCss from 'react-inline-css'
 import { ListGroupItem, Button } from 'react-bootstrap'
 import { Bert } from 'meteor/themeteorchef:bert'
+import fileSaver from 'file-saver'
+import { Meteor } from 'meteor/meteor'
+import { base64ToBlob } from '../../modules/base64-to-blob'
+
+
 
 export const Document = ({ document }) => (
   <InLineCss stylesheet={`

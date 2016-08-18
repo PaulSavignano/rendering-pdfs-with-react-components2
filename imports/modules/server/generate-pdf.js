@@ -27,6 +27,8 @@ const generatePDF = (html, fileName) => {
         fs.unlink(reponse.filename)
       }
     })
+  } catch (exception) {
+    module.reject(exception)
   }
 }
 
